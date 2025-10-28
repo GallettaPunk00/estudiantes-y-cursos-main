@@ -15,6 +15,11 @@ a {
     font-size: 20px;
 }
 
+.p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -34,14 +39,14 @@ a {
 }
 
 .btn{
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: rgb(218, 47, 4);
     color: white;
     border: solid 3px white;
     padding: 10px;
     border-radius: 8px;
     font-size: 20px;
-    transition: 0.2s all ease; 
+    transition: 0.1s all ease; 
 }
 
 .btn:hover{
@@ -52,6 +57,14 @@ a {
 
 header { 
     text-align: center;
+}
+
+.contenedor{
+    padding: 60px; 
+    border: 1px solid #ffffff; 
+    border-radius: 16px; 
+    background:#7a1800;
+    color: white; 
 }
 
 .container { 
@@ -102,7 +115,7 @@ label, h2{
     font-size: 24px;
 }   
 
-input, .inputsito{
+input, .inputsito, select{
     border-radius: 8px;
     height: 30px;
 }
@@ -110,5 +123,5 @@ input, .inputsito{
 .listavalore{
     padding: 10px;
     background-color: rgb(53, 0, 0);
-    margin-bottom: 10px;
+    border-radius: 10px;
 }
