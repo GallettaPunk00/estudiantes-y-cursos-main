@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  {% extends "base.html" %}
+  {% block content %}
+  <div class="form">
+    <h2>Nuevo Estudiante</h2>
+    <form action="{{ url_for('estudiantes.crear_estudiante') }}" method="post">
+      <label>Curso:</label><br>
+      <select name="curso_id" required>
+        <option class="inputsito" value="">-- selecciona un curso --</option>
+        {% for c in cursos %}
+        <option value="{{ c.id }}">{{ c.nombre }}</option>
+        {% endfor %}
+      </select><br>
+      <label>Nombre:</label><br>
+      <input type="text" name="nombre" required><br>
+      <label>Apellido:</label><br>
+      <input type="text" name="apellido" required><br>
+      <label>Edad:</label><br>
+      <input type="number" name="edad" min="0"><br><br>
+      <button class="btn" type="submit">Crear</button>
+    </form>
+    <p><a class="btn" href="{{ url_for('cursos.listar_cursos') }}">Inicio</a></p>
+  </div>
+
+  {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 20px; 
+    color: #310000;
+    background-color: #f1f1f1;
+    padding: 50px;
+    margin: 0 auto;
+    width: 1290px;
+}
+
+a { 
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background:#7a1800; 
+    border: 3px solid #ffffff; 
+    padding: 50px;
+    width: 20%;
+    border-radius: 12px;
+}
+
+.titulo {
+    font-size: 36px;
+    color: black;
+}
+
+.btn{
+    margin-top: 20px;
+    background-color: rgb(218, 47, 4);
+    color: white;
+    border: solid 3px white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: 0.2s all ease; 
+}
+
+.btn:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    padding: 16px;
+}
+
+header { 
+    text-align: center;
+}
+
+.container { 
+    display: flex; 
+    gap: 40px; 
+    justify-content: center;
+    
+}
+
+.left, .right {
+    padding: 60px; 
+    border: 1px solid #ffffff; 
+    border-radius: 16px; 
+    background:#7a1800; 
+}
+
+.left { 
+    width: 10%;
+}
+
+.right { 
+    width: 20%;
+}
+
+table { 
+    border-collapse: collapse; 
+    width: 50%; 
+}
+
+table th, table td { 
+    border: 1px solid #aa9e9e; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+ul.lista-cursos { 
+    list-style: none; 
+    padding-left: 0; 
+}
+
+ul.lista-cursos li { 
+    padding: 6px 0; 
+}
+
+label, h2{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}   
+
+input, .inputsito{
+    border-radius: 8px;
+    height: 30px;
+}
+
+.listavalore{
+    padding: 10px;
+    background-color: rgb(53, 0, 0);
+    margin-bottom: 10px;
+}

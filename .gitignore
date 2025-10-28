@@ -1,0 +1,15 @@
+venv/
+env/
+.venv/
+.env/
+venv.bak/
+env.bak/
+venv_old/
+env_old/
+virtualenv/
+pythonenv/
+venv-local/
+env-local/
+.conda/
+.conda_env/
+__venv__/

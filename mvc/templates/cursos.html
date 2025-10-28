@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="container">
+      <section class="left">
+        <h2>Nuevo Curso</h2>
+        <form action="{{ url_for('cursos.crear_curso') }}" method="post">
+          <label>Nombre:</label><br>
+          <input type="text" name="nombre" required>
+          <button class="btn" type="submit">Crear</button>
+        </form>
+      </section>
+
+
+      <section class="right">
+        <h2>Todos los Cursos</h2>
+        <ul class="lista-cursos">
+          {% for c in cursos %}
+            <li><a class="listavalore" href="{{ url_for('cursos.mostrar_curso', curso_id=c.id) }}">{{ c.nombre }}</a></li>
+          {% else %}
+            <li>No hay cursos</li>
+          {% endfor %}
+        </ul>
+
+
+        <p><a class="btn" class="btn" href="{{ url_for('estudiantes.nuevo_estudiante') }}">Agregar Estudiante</a></p>
+      </section>
+    </div>
+    {% endblock %}
+</body>
+</html>
